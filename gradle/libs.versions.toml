@@ -15,6 +15,7 @@ koinCore = "4.1.1"
 koinTest = "4.1.1"
 kotlin = "2.2.20"
 kotlinStdlib = "2.2.20"
+kotlinxCoroutinesCore = "1.10.2"
 kotlinxSerializationJson = "1.9.0"
 kotlinxSerializationJsonVersion = "1.9.0”)"
 ktorClientLogging = "3.0.0"
@@ -42,6 +43,7 @@ androidx-lifecycle-runtimeCompose = { module = "org.jetbrains.androidx.lifecycle
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
 androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientOkhttp" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientOkhttp" }

@@ -44,6 +44,8 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(projects.core.domain)
+
                 implementation(libs.kotlin.stdlib)
                 implementation(libs.ktor.client.core)
                 implementation(libs.ktor.client.content.negotiation)

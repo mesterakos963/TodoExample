@@ -44,12 +44,14 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(projects.core.data)
+                implementation(projects.core.domain)
+
                 implementation(libs.kotlin.stdlib)
                 implementation(libs.koin.core)
                 implementation(libs.koin.androidx.compose)
                 implementation(project.dependencies.platform(libs.koin.bom))
                 implementation(libs.ktor.client.core)
-                implementation(projects.core.data)
             }
         }
 

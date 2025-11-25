@@ -1,3 +1,3 @@
 package com.mentoring.di.modules
 
-val appModules = listOf(networkModule)
+val appModules = listOf(networkModule, dataStoreModule, repositoryModule)
