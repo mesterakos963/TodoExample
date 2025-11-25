@@ -16,10 +16,13 @@ koinTest = "4.1.1"
 kotlin = "2.2.20"
 kotlinStdlib = "2.2.20"
 kotlinxSerializationJson = "1.9.0"
-ktorClientCore = "3.3.2"
+kotlinxSerializationJsonVersion = "1.9.0”)"
+ktorClientLogging = "3.0.0"
+ktorSerializationKotlinxJson = "1.0.0"
 runner = "1.5.2"
 core = "1.5.0"
 jetbrainsKotlinJvm = "2.2.20"
+ktorClientOkhttp = "3.3.2"
 
 [libraries]
 koin-core = { module = "io.insert-koin:koin-core" }
@@ -40,10 +43,12 @@ kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", versio
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
 androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
-ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientCore" }
-ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientCore" }
-ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientCore" }
-ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClientCore" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientOkhttp" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientOkhttp" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktorClientOkhttp" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientLogging" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorClientOkhttp" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClientOkhttp" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
