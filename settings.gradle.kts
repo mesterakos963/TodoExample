@@ -31,8 +31,7 @@ dependencyResolutionManagement {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":composeApp")
-include(":core")
+include(":core:di")
 include(":core:data")
 include(":core:domain")
 include(":core:presentation")
-include(":core:di")

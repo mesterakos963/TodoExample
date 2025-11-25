@@ -1,7 +1,7 @@
 [versions]
 agp = "8.11.2"
 android-compileSdk = "36"
-android-minSdk = "24"
+android-minSdk = "31"
 android-targetSdk = "36"
 androidx-activity = "1.11.0"
 androidx-appcompat = "1.7.1"
@@ -22,10 +22,10 @@ core = "1.5.0"
 jetbrainsKotlinJvm = "2.2.20"
 
 [libraries]
-koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinCore" }
-koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinCore" }
-koin-test = { module = "io.insert-koin:koin-test", version.ref = "koinTest" }
-koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinCore" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-testJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { module = "junit:junit", version.ref = "junit" }
