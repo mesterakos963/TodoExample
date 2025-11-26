@@ -4,6 +4,6 @@ import com.mentoring.domain.model.Todo
 import kotlinx.coroutines.flow.Flow
 
 interface TodoRepository {
-    fun getTodos(): Flow<List<Todo>>
-    fun getTodoById(id: Int): Flow<Todo>
+    suspend fun getTodos(): Flow<List<Todo>>
+    suspend fun getTodoById(id: Int): Flow<Todo>
 }

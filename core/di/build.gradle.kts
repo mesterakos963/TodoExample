@@ -46,6 +46,8 @@ kotlin {
             dependencies {
                 implementation(projects.core.data)
                 implementation(projects.core.domain)
+                implementation(projects.feature.list.di)
+                implementation(projects.feature.details.di)
 
                 implementation(libs.kotlin.stdlib)
                 implementation(libs.koin.core)

@@ -8,11 +8,7 @@ import kotlinx.coroutines.flow.Flow
 class TodoRepositoryImpl(
     private val dataStore: DataStore
 ) : TodoRepository {
-    override fun getTodos(): Flow<List<Todo>> {
-        TODO("Not yet implemented")
-    }
+    override suspend fun getTodos(): Flow<List<Todo>> = dataStore.getTodos()
 
-    override fun getTodoById(id: Int): Flow<Todo> {
-        TODO("Not yet implemented")
-    }
+    override suspend fun getTodoById(id: Int): Flow<Todo> = dataStore.getTodoById(id)
 }
