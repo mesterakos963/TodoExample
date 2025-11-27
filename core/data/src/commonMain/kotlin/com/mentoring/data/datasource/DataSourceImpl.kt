@@ -1,4 +1,4 @@
-package com.mentoring.data.datastore
+package com.mentoring.data.datasource
 
 import com.mentoring.domain.model.Todo
 import io.ktor.client.HttpClient
@@ -6,9 +6,9 @@ import io.ktor.client.call.body
 import io.ktor.client.request.get
 import kotlinx.coroutines.flow.flow
 
-class DataStoreImpl(
+class DataSourceImpl(
     private val client: HttpClient
-) : DataStore {
+) : DataSource {
 
     private val baseUrl = "https://jsonplaceholder.typicode.com"
 
