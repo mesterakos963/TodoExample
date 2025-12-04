@@ -19,6 +19,10 @@ class TodoListViewModel(
     val uiState = _uiState.asStateFlow()
 
     init {
+        getTodoList()
+    }
+
+    private fun getTodoList() {
         viewModelScope.launch(Dispatchers.IO) {
             updateLoadingState(true)
             getTodoListUseCase().collect { todoList ->
