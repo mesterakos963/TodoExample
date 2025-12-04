@@ -36,6 +36,7 @@ fun TodoDetailsScreen(
             LoadingState(modifier = Modifier.align(Alignment.Center))
         } else {
             TodoDetailsScreenContent(
+                modifier = Modifier.fillMaxSize(),
                 todo = uiState.todo,
                 onBackClick = onBackClick
             )
@@ -47,8 +48,10 @@ fun TodoDetailsScreen(
 fun TodoDetailsScreenContent(
     todo: Todo?,
     onBackClick: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = modifier) {
+        Spacer(modifier = Modifier.height(30.dp))
         BackButton(onClick = onBackClick)
         Spacer(modifier = Modifier.height(10.dp))
         Column(

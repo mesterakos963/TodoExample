@@ -24,6 +24,7 @@ fun TodoListScreen(
             LoadingState(modifier = Modifier.align(Alignment.Center))
         } else {
             TodoListScreenContent(
+                modifier = Modifier.fillMaxSize(),
                 todoList = uiState.todoList,
                 onItemClick = onItemClick
             )
@@ -35,6 +36,11 @@ fun TodoListScreen(
 fun TodoListScreenContent(
     todoList: List<Todo>,
     onItemClick: (Todo) -> Unit,
+    modifier: Modifier = Modifier,
 ) {
-    TodoList(list = todoList, onItemClick = onItemClick)
+    TodoList(
+        modifier = modifier.fillMaxSize(),
+        list = todoList,
+        onItemClick = onItemClick
+    )
 }

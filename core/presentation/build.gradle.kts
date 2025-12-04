@@ -47,6 +47,10 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(projects.core.domain)
+                implementation(projects.feature.list.presentation)
+                implementation(projects.feature.details.presentation)
+
                 implementation(libs.androidx.nav3.ui)
                 implementation(libs.androidx.material3.adaptive)
                 implementation(libs.androidx.material3.adaptive.nav3)
