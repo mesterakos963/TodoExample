@@ -18,10 +18,10 @@ class TodoDetailsViewModel(
     private val _uiState = MutableStateFlow(TodoDetailsUiState())
     val uiState = _uiState.asStateFlow()
 
-    init {
+    fun getTodoDetailsById(id: Int) {
         viewModelScope.launch(Dispatchers.IO) {
             updateLoadingState(true)
-            getTodoDetailsUseCase(1).collect { todo ->
+            getTodoDetailsUseCase(id).collect { todo ->
                 updateTodoDetails(todo)
                 updateLoadingState(false)
             }

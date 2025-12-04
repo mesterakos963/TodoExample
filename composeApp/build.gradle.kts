@@ -32,6 +32,10 @@ kotlin {
         }
         commonMain.dependencies {
             implementation(projects.core.di)
+            implementation(projects.core.domain)
+            implementation(projects.core.presentation)
+            implementation(projects.feature.list.presentation)
+            implementation(projects.feature.details.presentation)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -41,6 +45,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.androidx.nav3.ui)
+            implementation(libs.androidx.material3.adaptive)
+            implementation(libs.androidx.material3.adaptive.nav3)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
